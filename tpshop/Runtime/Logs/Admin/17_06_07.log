@@ -1,0 +1,40 @@
+[ 2017-06-07T10:36:58+08:00 ] 127.0.0.1 /index.php/Admin/head.html
+ERR: 无法加载控制器:Head
+
+[ 2017-06-07T10:37:09+08:00 ] 127.0.0.1 /index.php/Admin/view/head.html
+ERR: 无法加载控制器:View
+
+[ 2017-06-07T10:37:17+08:00 ] 127.0.0.1 /index.php/Admin/View/head.html
+ERR: 无法加载控制器:View
+
+[ 2017-06-07T10:37:32+08:00 ] 127.0.0.1 /index.php/Admin/View/head.html
+ERR: 无法加载控制器:View
+
+[ 2017-06-07T10:37:37+08:00 ] 127.0.0.1 /index.php/Admin/View/head.html
+ERR: 无法加载控制器:View
+
+[ 2017-06-07T10:37:45+08:00 ] 127.0.0.1 /index.php/Admin/View/head.html
+ERR: 无法加载控制器:View
+
+[ 2017-06-07T10:41:41+08:00 ] 127.0.0.1 /index.php/Admin/Index/%7B$Think.CSS_URL%7Dcss/admin.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
+[ 2017-06-07T10:41:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/%7B$Think.CSS_URL%7Dcss/admin.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
+[ 2017-06-07T10:42:16+08:00 ] 127.0.0.1 /index.php/Admin/Index/%7B$Think.CSS_URL%7Dcss/admin.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
+[ 2017-06-07T10:42:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/%7B$Think.CSS_URL%7Dcss/admin.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
+[ 2017-06-07T10:43:12+08:00 ] 127.0.0.1 /index.php/Admin/Index/%7B$Think.CSS_URL%7Dcss/admin.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
+[ 2017-06-07T10:47:38+08:00 ] 127.0.0.1 /index.php/Admin/Products/index/
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-5,5' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_goods` LIMIT -5,5  
+
+[ 2017-06-07T17:00:22+08:00 ] 127.0.0.1 /index.php/Admin/Products/EditProduct/id/2
+ERR: 参数错误或者未定义:pid
+

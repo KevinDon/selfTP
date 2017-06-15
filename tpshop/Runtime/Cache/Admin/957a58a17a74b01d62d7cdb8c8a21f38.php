@@ -1,0 +1,80 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>修改商品</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <link href="<?php echo (CSS_URL); ?>css/mine.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="div_head">
+            <span>
+                <span style="float:left">当前位置是：商品管理-》修改商品信息</span>
+                <span style="float:right;margin-right: 8px;font-weight: bold">
+                    <a style="text-decoration: none" href="<?php echo (ROOT); ?>index.php/Admin/Products/index">【返回】</a>
+                </span>
+            </span>
+        </div>
+        <div></div>
+
+        <div style="font-size: 13px;margin: 10px 5px">
+            <form action="<?php echo (ROOT); ?>index.php/Admin/Products/updataProduct" method="post" enctype="multipart/form-data">
+            <input type="hidden" value="<?php echo $product['good_id'] ?>" name="goods_id" />
+            <table border="1" width="100%" class="table_a">
+                <tr>
+                    <td>商品名称</td>
+                    <td><input type="text" name="goods_name" value="<?php echo $product['good_name'] ?>" /></td>
+                </tr>
+                <tr>
+                    <td>商品分类</td>
+                    <td>
+                        <select name="goods_category_id" value="<?php echo $product['cat_id'] ?>">
+                        <?php foreach ($catalogList as $item): ?>
+                            <option value="<?php echo $item["cat_id"] ?>" <?php if ($product['cat_id'] == $item["cat_id"] ){ echo "selected" ;} ?> ><?php echo $item["cat_name"] ?></option>
+                        <?php endforeach ?>
+<!--                       <option value="0">请选择</option>
+                            <option value="1">家用电器</option>
+                            <option value="2">手机数码</option>
+                            <option value="3">电脑办公</option>
+                            <option value="4">服饰鞋帽</option>
+ -->                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>商品品牌</td>
+                    <td>
+                        <select name="f_goods_brand_id">
+                            <option>请选择</option>
+                            <option>苹果</option>
+                            <option>诺基亚</option>
+                            <option>HTC</option>
+                            <option>摩托罗拉</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>商品价格</td>
+                    <td><input type="text" name="goods_price" value="<?php echo $product['goods_price'] ?>" /></td>
+                </tr>
+                <tr>
+                    <td>商品图片</td>
+                    <td><input type="file" name="f_goods_image" value="./img/2013-12-33.jpg" /></td>
+                </tr>
+                <tr>
+                    <td>商品详细描述</td>
+                    <td>
+                        <textarea name="goods_introduce"><?php echo $product['good_description'] ?></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="修改">
+                    </td>
+                </tr>  
+            </table>
+            </form>
+        </div>
+    </body>
+</html>
