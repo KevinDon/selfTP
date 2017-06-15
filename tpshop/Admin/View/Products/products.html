@@ -5,7 +5,7 @@
 
         <title>会员列表</title>
 
-        <link href="<{$Think.CSS_URL}>/css/mine.css" type="text/css" rel="stylesheet" />
+        <link href="<{$Think.ADMIN_CSS_URL}>/css/mine.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <style>
@@ -52,8 +52,8 @@
                         <td><a href="#"><?php echo $item['goods_name']?></a></td>
                         <td><?php echo $item['goods_number']?></td>
                         <td><?php echo $item['goods_price']?></td>
-                        <td><img src="<{$Think.IMG_URL}>/img/20121018-174034-58977.jpg" height="60" width="60"></td>
-                        <td><img src="<{$Think.IMG_URL}>/img/20121018-174034-97960.jpg" height="40" width="40"></td>
+                        <td><img src="<{$Think.ADMIN_IMG_URL}>/img/20121018-174034-58977.jpg" height="60" width="60"></td>
+                        <td><img src="<{$Think.ADMIN_IMG_URL}>/img/20121018-174034-97960.jpg" height="40" width="40"></td>
                         <td>苹果apple</td>
                         <td><?php echo date("Y-m-d h:i:s", $item['goods_create_time']) ?></td>
                         <td><a href="<?php echo ROOT ?>__ACTION__/EditProduct/id/<?php echo $item['goods_id']; ?>">修改</a></td>

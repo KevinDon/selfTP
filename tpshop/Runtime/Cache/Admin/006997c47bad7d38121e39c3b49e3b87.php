@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta http-equiv=content-type content="text/html; charset=utf-8" />
-        <link href="<?php echo (CSS_URL); ?>/css/admin.css" type="text/css" rel="stylesheet" />
+        <link href="<?php echo (ADMIN_CSS_URL); ?>/css/admin.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <table cellspacing=0 cellpadding=0 width="100%" 
-               background="<?php echo (IMG_URL); ?>/img/header_bg.jpg" border=0>
+               background="<?php echo (ADMIN_IMG_URL); ?>/img/header_bg.jpg" border=0>
             <tr height=56>
-                <td width=260><img height=56 src="<?php echo (IMG_URL); ?>/img/header_left.jpg" 
+                <td width=260><img height=56 src="<?php echo (ADMIN_IMG_URL); ?>/img/header_left.jpg" 
                                    width=260></td>
                 <td style="font-weight: bold; color: #fff; padding-top: 20px" 
                     align=middle>当前用户：<?php echo $manager[0]['mg_name'] ?> &nbsp;&nbsp; <a style="color: #fff" 
@@ -18,7 +18,7 @@
                                                         href="" target=_top>退出系统</a> 
                 </td>
                 <td align=right width=268><img height=56 
-                                               src="<?php echo (IMG_URL); ?>/img/header_right.jpg" width=268></td></tr></table>
+                                               src="<?php echo (ADMIN_IMG_URL); ?>/img/header_right.jpg" width=268></td></tr></table>
         <table cellspacing=0 cellpadding=0 width="100%" border=0>
             <tr bgcolor=#1c5db6 height=4>
                 <td></td>

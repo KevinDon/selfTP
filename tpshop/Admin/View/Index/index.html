@@ -5,7 +5,6 @@
         <meta http-equiv=pragma content=no-cache />
         <meta http-equiv=cache-control content=no-cache />
         <meta http-equiv=expires content=-1000 />
-        
         <title>管理中心 v1.0</title>
     </head>
     
