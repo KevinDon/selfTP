@@ -4,3 +4,15 @@ ERR: XML标签语法错误
 [ 2017-06-15T15:24:47+08:00 ] 127.0.0.1 /index.php/Home/view/css/style.css
 ERR: 无法加载控制器:View
 
+[ 2017-06-15T20:35:52+08:00 ] 127.0.0.1 /index.php/Home/Login/%7B$Think.CSS_URL%7Dcss/style.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
+[ 2017-06-15T20:37:10+08:00 ] 127.0.0.1 /index.php/Home/Login/%7B$Think.CSS_URL%7Dcss/style.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
+[ 2017-06-15T20:37:25+08:00 ] 127.0.0.1 /index.php/Home/Login/%7B$Think.CSS_URL%7Dcss/style.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
+[ 2017-06-15T20:38:30+08:00 ] 127.0.0.1 /index.php/Home/Login/%7B$Think.CSS_URL%7Dcss/style.css
+ERR: 非法操作:{$Think.CSS_URL}css
+
