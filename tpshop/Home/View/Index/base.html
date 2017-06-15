@@ -1,23 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-       <block name="head">
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-           <meta name="Generator" content="YONGDA v1.0" />
-           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-           <meta name="Keywords" content="YONGDA商城" />
-           <meta name="Description" content="YONGDA商城" />
-           <title>YONGDA商城 - Powered by YongDa</title>
-           <link href="<{$Think.HOME_CSS_URL}>/css/style.css" rel="stylesheet" type="text/css" />
-        </block>
-</head>
-
-<body>
-
-    <block name="footer">         
-                <div class="blank"></div>
+    <block name="head">
+        <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="Generator" content="YONGDA v1.0" />
+                <meta name="Keywords" content="YONGDA商城" />
+                <meta name="Description" content="YONGDA商城" />
+                <title>YONGDA商城 - Powered by YongDa</title>
+                <link href="<{$Think.HOME_CSS_URL}>/css/style.css" rel="stylesheet" type="text/css" />
+        </head>
+    </block>
+    <block name="body">
+        <body class="wrapper">
+            <block name="main">
+             ./Base/temp
+            </block>
+                
+            <block name="footer">
+                <div class="footer">
+                    <div class="blank"></div>
                     <div class="block">
-                        <a href="#" target="_blank" title="YONGDA商城"><img alt="YONGDA商城" src="<{$Think.HOME_IMG_URL}>/images/di.jpg"></a>
+                        <a href="#" target="_blank" title="YONGDA商城"><img alt="YONGDA商城" src="./images/di.jpg"></a>
                         <div class="blank"></div>
                     </div>
                     <div class="block">
@@ -68,6 +71,11 @@
                     <div id="bottomNav" class="box block">
                         <div class="box_1">
                             <div class="links clearfix"> 
+                                <a href="#" target="_blank" title="YONGDA商城"><img src="./images/ecmoban_link.jpg" alt="YONGDA商城" border="0"></a>
+
+                                <a href="#" target="_blank" title="YONGDA 网上商店管理系统">
+                                    <img src="./images/yongda_logo.gif" alt="YONGDA 网上商店管理系统" border="0" />
+                                </a>
 
 
                                 [<a href="#" target="_blank" title="免费申请网店">免费申请网店</a>]
@@ -103,19 +111,8 @@
                             © 2005-2012 YONGDA 版权所有，并保留所有权利。<br />
                         </div>
                     </div>
-                </body>
-            </html>
-
-
-            <img src="xxxx.jpg" align="left" vspace="10" hspace="10" />
-
-            <p class= style='mso-outline-level:3'> 
-                <b>
-                    <span style='font-size:11.5pt'>
-                       Dropshipzone
-                    </span>
-                </b> 
-            </p>
+                </div>
+            </block>
+        </body>
     </block>
-</body>
 </html>

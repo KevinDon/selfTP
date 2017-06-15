@@ -4,14 +4,13 @@
 
 	// 开启调试模式
  	define('APP_DEBUG', true);
- 	//define('DEFAULT_MODULE', 'Admin') // 默认模块
 	define('ROOT','http://web.tpshop.com');
 	//设置CSS默认路径
-	define('CSS_URL', ROOT . '/Admin/view');
+	define('Admin_CSS_URL', ROOT . '/Admin/view');
 	//设置IMG默认路径
-	define('IMG_URL', ROOT . '/Admin/view');
+	define('Admin_IMG_URL', ROOT . '/Admin/view');
 
-	//设置CSS默认路径
+	//设置CSS默认路径 //默认模块
 	define('HOME_CSS_URL', ROOT . '/Home/view');
 	//设置IMG默认路径
 	define('HOME_IMG_URL', ROOT . '/Home/view');
