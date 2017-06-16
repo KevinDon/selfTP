@@ -38,7 +38,7 @@
         <a href="#" class="cur">首页<span></span></a>
         <a href="#">GSM手机<span></span></a>
         <a href="#">双模手机<span></span></a>
-        <a href="#">电脑<span></span></a>
+        <a href="#">苹果手机<span></span></a>
         <a href="#">优惠活动<span></span></a>
         <a href="#">留言板<span></span></a>
     </div>

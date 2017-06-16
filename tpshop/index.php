@@ -6,9 +6,9 @@
  	define('APP_DEBUG', true);
 	define('ROOT','http://web.tpshop.com');
 	//设置CSS默认路径
-	define('Admin_CSS_URL', ROOT . '/Admin/view');
+	define('ADMIN_CSS_URL', ROOT . '/Admin/view');
 	//设置IMG默认路径
-	define('Admin_IMG_URL', ROOT . '/Admin/view');
+	define('ADMIN_IMG_URL', ROOT . '/Admin/view');
 
 	//设置CSS默认路径 //默认模块
 	define('HOME_CSS_URL', ROOT . '/Home/view');
