@@ -50,7 +50,7 @@
 
     <form id="searchForm" method="get" >
         <input name="keywords" id="keyword" type="text" />
-        <input name="imageField" value=" " class="go" style="cursor: pointer; background: url('{$Think.IMG_URL}images/sousuo.gif') no-repeat scroll 0% 0% transparent; width: 39px; height: 20px; border: medium none; float: left; margin-right: 15px; vertical-align: middle;" type="submit">
+        <input name="imageField" value=" " class="go" style="cursor: pointer; background: url('<?php echo (); ?>images/sousuo.gif') no-repeat scroll 0% 0% transparent; width: 39px; height: 20px; border: medium none; float: left; margin-right: 15px; vertical-align: middle;" type="submit">
 
     </form>
 </div>
@@ -58,16 +58,16 @@
 
 <div class="header_bg_b">
     <div class="f_l" style="padding-left: 10px;">
-        <img src="{$Think.IMG_URL}images/biao6.gif">
+        <img src="<?php echo (); ?>images/biao6.gif">
         北京市区，现在下单(截至次日00:30已出库)，<b>明天上午(9-14点)</b>送达 <b>免运费火热进行中！</b>
     </div>
 
     <div class="f_r" style="padding-right: 10px;">
-        <img style="vertical-align: middle;" src="{$Think.IMG_URL}images/biao3.gif">
+        <img style="vertical-align: middle;" src="<?php echo (); ?>images/biao3.gif">
 
         <span class="cart" id="ECS_CARTINFO">
             <a href="#" title="查看购物车">您的购物车中有 0 件商品，总计金额 ￥0.00元。</a></span>
-        <a href="#"><img style="vertical-align: middle;" src="{$Think.IMG_URL}images/biao7.gif"></a>
+        <a href="#"><img style="vertical-align: middle;" src="<?php echo (); ?>images/biao7.gif"></a>
     </div>
 </div>
 
@@ -125,7 +125,7 @@
                     2. 收藏您关注的商品<br />
                     3. 享受会员积分制度<br />
                     4. 订阅本店商品信息  <br />
-                    <a href="#"><img src="{$Think.IMG_URL}images/bnt_ur_reg.gif"></a>
+                    <a href="#"><img src="<?php echo (); ?>images/bnt_ur_reg.gif"></a>
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@
 </div>
 <div class="blank"></div>
 <div class="block">
-    <a href="#" target="_blank" title="YONGDA商城"><img alt="YONGDA商城" src="{$Think.IMG_URL}images/di.jpg"></a>
+    <a href="#" target="_blank" title="YONGDA商城"><img alt="YONGDA商城" src="<?php echo (); ?>images/di.jpg"></a>
 
     <div class="blank"></div>
 </div>
