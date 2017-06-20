@@ -1,7 +1,7 @@
 <?php 
 	namespace Admin\Controller;
-	use Think\Controller;
-	class IndexController extends Controller{
+	//use Think\Controller;
+	class IndexController extends \Admin\Common\Controller\AdminController{
 		protected $ManagerModel;
 		protected $verifyImage;
 		public function _initialize(){

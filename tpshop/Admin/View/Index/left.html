@@ -49,8 +49,8 @@
                                    <img height=9  src="<{$Think.ADMIN_IMG_URL}>/img/menu_icon.gif" width=9>
                                </td>
                                <td><a class=menuchild 
-                                      href="#" 
-                                      target=main><?php echo $v['auth_name'] ?></a>
+                                      href="__MODULE__/<?php echo $v['auth_c'].'/' .$v['auth_a'] ;?>" 
+                                      target=right><?php echo $v['auth_name'] ?></a>
                                </td>
                            </tr>
                            <tr height=4>

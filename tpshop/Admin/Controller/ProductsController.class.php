@@ -1,13 +1,13 @@
 <?php 
 	namespace Admin\Controller;
-	use Think\Controller;
-	class ProductsController extends Controller{
+	//use Common\Controller;
+	class ProductsController extends \Admin\Common\Controller\AdminController{
 		protected $productsModel;
 		protected $catalog;
 		protected $brands;
 		protected $PageModle;
 		public function _initialize(){
-			//parent::__construct();
+                        //parent::__construct();
 		 	$this->productsModel = new \Admin\Model\ProductsModel();
 		 	$this->catalog = D('Catalog');
 		 	$this->brands = D('Brands');
