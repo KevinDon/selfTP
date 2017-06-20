@@ -33,9 +33,16 @@
                         $info = $model->query($sql);
                         $auth_ids = $info[0]['role_auth_ids'];
                         //根据IDs获取具体权限
-                        $sql_ID = "select * from sw_auth where auth_id in ($auth_ids) ";
-                        $auth_info = $model->query($sql_ID);
-                        $this->assign('auth_info', $auth_info);
+                        //showBug($auth_ids);
+                        //获取所有父ID
+                        $sql_ID = "select * from sw_auth where auth_id in (".$auth_ids .") and auth_level = 0";
+                        $parentAuth_info = $model->query($sql_ID);
+                        //获取所有子ID
+                        $sql_ID = "select * from sw_auth where auth_id in (".$auth_ids .") and auth_level = 1";
+                        $childAuth_info = $model->query($sql_ID);
+                        //showBug($auth_info);
+                        $this->assign('parentAuth_info', $parentAuth_info);
+                        $this->assign('childAuth_info', $childAuth_info);
 			$this->display('left');
 		}
 

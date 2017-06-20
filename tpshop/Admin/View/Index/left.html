@@ -30,33 +30,36 @@
                             <td height=10></td>
                         </tr>
                     </table>
-                    <?php foreach ($auth_info as $key => $value) :?>
+                    <?php foreach ($parentAuth_info as $key => $value) :?>
                     <table cellspacing=0 cellpadding=0 width=150 border=0>
                         <tr height=22>
                             <td style="padding-left: 30px" background=<{$Think.ADMIN_IMG_URL}>/img/menu_bt.jpg>
-                                <a class=menuparent onclick=expand(1) href="javascript:void(0);"><?php echo $value['auth_name']; ?></a>
+                                <a class=menuparent onclick=expand(<?php echo $value['auth_path']; ?>) href="javascript:void(0);"><?php echo $value['auth_name']; ?></a>
                             </td>
                         </tr>
                         <tr height=4>
                             <td></td>
                         </tr>
                     </table>
-                    <table id=child1 style="display: none" cellspacing=0 cellpadding=0 width=150 border=0>
-                        <tr height=20>
-                            <td align=middle width=30>
-                                <img height=9  src="<{$Think.ADMIN_IMG_URL}>/img/menu_icon.gif" width=9>
-                            </td>
-                            <td><a class=menuchild 
-                                   href="#" 
-                                   target=main>公司简介</a>
-                            </td>
-                        </tr>
-                        <?php   endforeach; ?>
-                        <tr height=4>
+                       <table id=child<?php echo $value['auth_path']; ?>  style="display: none" cellspacing=0 cellpadding=0 width=150 border=0>
+                              <?php foreach ($childAuth_info as $k => $v): ?>
+                              <?php if($v['auth_pid'] == $value['auth_path']) :?>
+                              <tr height=20>
+                               <td align=middle width=30>
+                                   <img height=9  src="<{$Think.ADMIN_IMG_URL}>/img/menu_icon.gif" width=9>
+                               </td>
+                               <td><a class=menuchild 
+                                      href="#" 
+                                      target=main><?php echo $v['auth_name'] ?></a>
+                               </td>
+                           </tr>
+                           <tr height=4>
                             <td colspan=2></td>
                         </tr>
+                        <?php endif; ?>
+                        <?php endforeach; ?>
                     </table>
-                    
+                    <?php endforeach; ?>
                 </td>
                 <td width=1 bgcolor=#d1e6f7></td>
             </tr>
