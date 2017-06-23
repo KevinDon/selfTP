@@ -6,6 +6,9 @@
 		public function checkManager($Mname){
 			return $this->where("mg_name='$Mname'")->select();
 		}
+		public function getManager(){
+			return $this->select();
+		}
 	}
 
  ?>

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>会员列表</title>
+
+        <link href="<{$Think.ADMIN_CSS_URL}>/css/mine.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <style>
+            .tr_color{background-color: #9F88FF}
+        </style>
+        <div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：商品管理-》商品列表</span>
+                <span style="float: right; margin-right: 8px; font-weight: bold;">
+                    <a style="text-decoration: none;" href="<{$Think.ROOT}>/index.php/Admin/Products/addProduct">【添加商品】</a>
+                </span>
+            </span>
+        </div>
+        <div></div>
+        <div class="div_search">
+            <span>
+                <form action="#" method="get">
+                    品牌<select name="s_product_mark" style="width: 100px;">
+                        <option selected="selected" value="0">请选择</option>
+                        <?php foreach ($brands as $item): ?>
+                             <option value="<?php echo $item['id'] ?>"><?php echo $item['brand'] ?></option>
+                        <?php endforeach ?>
+                    </select>
+                    <input value="查询" type="submit" />
+                </form>
+            </span>
+        </div>
+        <div style="font-size: 13px; margin: 10px 5px;">
+            <table class="table_a" border="1" width="100%">
+                <tbody><tr style="font-weight: bold;">
+                        <td>ID</td>
+                        <td>管理员名字</td>
+                        <td>创建时间</td>
+                        <td>角色</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    <?php foreach ($managerInfo as $manager): ?>
+                    <tr id="product1">
+                        <td><?php echo $manager['mg_id']?></td>
+                        <td><a href="#"><?php echo $manager['mg_name']?></a></td>
+                        <td><?php echo date("Y-m-d h:i:s", $manager['mg_time']) ?></td>
+                        <td>
+                            <?php foreach ($roleInfo as $roleInfo => $role): ?>
+                                <?php if($manager['mg_role_id'] == $role['role_id']): ?>
+                                     <?php echo $role['role_name'] ?>
+                                <?php endif; ?>
+                            <?php endforeach ?>
+                        </td>
+                        <td><a href="<?php echo ROOT ?>__ACTION__/EditProduct/id/<?php echo $manager['mg_id']; ?>">修改</a>|<a href="<{$Think.ROOT}>/index.php/Admin/Products/deleteProduct/id/<?php echo $manager['mg_id'] ?>" >删除</a></td>
+                    </tr>
+                <?php endforeach; ?>
+         
+                 
+                </tbody>
+            </table>
+            <table  width="100%">
+                   <tr>
+                        <td colspan="20" style="text-align: center;">
+                            <{$page}>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </body>
+</html>
+      
+
+
