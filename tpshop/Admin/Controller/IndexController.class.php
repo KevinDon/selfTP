@@ -26,24 +26,42 @@
 		}
 		
 		public function left(){
-                        $name = session('managerName');
-                        $model = M();
-                        //获取改用户的role ids
-                        $sql = "select b.role_auth_ids from sw_manager a join sw_role b on a.mg_role_id = b.role_id where a.mg_name='" . $name . "' ";
-                        $info = $model->query($sql);
-                        $auth_ids = $info[0]['role_auth_ids'];
-                        //根据IDs获取具体权限
-                        //showBug($auth_ids);
-                        //获取所有父ID
-                        $sql_ID = "select * from sw_auth where auth_id in (".$auth_ids .") and auth_level = 0";
-                        $parentAuth_info = $model->query($sql_ID);
-                        //获取所有子ID
-                        $sql_ID = "select * from sw_auth where auth_id in (".$auth_ids .") and auth_level = 1";
-                        $childAuth_info = $model->query($sql_ID);
-                        //showBug($auth_info);
-                        $this->assign('parentAuth_info', $parentAuth_info);
-                        $this->assign('childAuth_info', $childAuth_info);
-			$this->display('left');
+
+			$name = session('managerName');
+			$model = M();
+			//获取改用户的role ids
+			$sql = "select b.role_auth_ids from sw_manager a join sw_role b on a.mg_role_id = b.role_id where a.mg_name='" . $name . "'" ;
+
+			$info = $model->query($sql);
+			//showBug($info); Admin的role_auth_ids是空的
+			$auth_ids = $info[0]['role_auth_ids'];
+			//根据IDs获取具体权限
+			//showBug(empty($auth_ids));
+			//
+			//剔除超级管理员
+			//showBug(empty($auth_ids));
+			if($name == 'admin' && empty($auth_ids)){
+				//获取所有父ID
+				$sql_ID = "select * from sw_auth where auth_level = 0";
+				$parentAuth_info = $model->query($sql_ID);
+				//获取所有子ID
+				$sql_ID = "select * from sw_auth where auth_level = 1";
+				$childAuth_info = $model->query($sql_ID);
+				$this->assign('parentAuth_info', $parentAuth_info);
+				$this->assign('childAuth_info', $childAuth_info);
+				$this->display('left');
+			}else{
+				//获取所有父ID
+				$sql_ID = "select * from sw_auth where auth_id in (" . $auth_ids . ") and auth_level = 0";
+				$parentAuth_info = $model->query($sql_ID);
+				//获取所有子ID
+				$sql_ID = "select * from sw_auth where auth_id in (" . $auth_ids . ") and auth_level = 1";
+				$childAuth_info = $model->query($sql_ID);
+				//showBug($auth_info);
+				$this->assign('parentAuth_info', $parentAuth_info);
+				$this->assign('childAuth_info', $childAuth_info);
+				$this->display('left');
+			}
 		}
 
 	}

@@ -1,0 +1,32 @@
+[ 2017-06-22T08:26:12+08:00 ] 127.0.0.1 /index.php/Admin/Index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-22T13:20:38+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-22T13:20:38+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-22T14:29:19+08:00 ] 127.0.0.1 /index.php/Admin/Index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a.mg_name='kevin'' at line 1
+ [ SQL语句 ] : select b.role_auth_ids from sw_manager a join sw_role b on a.mg_role_id = b.role_idwhere a.mg_name='kevin'
+
+[ 2017-06-22T14:29:23+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'a.mg_name='kevin'' at line 1
+ [ SQL语句 ] : select b.role_auth_ids from sw_manager a join sw_role b on a.mg_role_id = b.role_idwhere a.mg_name='kevin'
+
+[ 2017-06-22T16:34:32+08:00 ] 127.0.0.1 /index.php/Admin/Index/left
+ERR: 1054:Unknown column 'au_id' in 'where clause'
+ [ SQL语句 ] : select * from sw_auth where au_id in (1,2,3,4) and auth_level = 0
+
+[ 2017-06-22T16:34:35+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1054:Unknown column 'au_id' in 'where clause'
+ [ SQL语句 ] : select * from sw_auth where au_id in (1,2,3,4) and auth_level = 0
+
+[ 2017-06-22T16:43:31+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+

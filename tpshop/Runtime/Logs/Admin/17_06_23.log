@@ -1,0 +1,38 @@
+[ 2017-06-23T08:05:36+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-23T08:05:50+08:00 ] 127.0.0.1 /index.php/Admin/Index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-23T08:05:54+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-23T08:12:10+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-23T09:20:26+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-23T09:20:33+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Login&a=lgoin
+ERR: 非法操作:lgoin
+
+[ 2017-06-23T09:21:00+08:00 ] 127.0.0.1 /index.php/Admin/Index/left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-23T09:21:04+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-23T10:49:01+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Index&a=left
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and auth_level = 0' at line 1
+ [ SQL语句 ] : select * from sw_auth where auth_id in () and auth_level = 0
+
+[ 2017-06-23T10:57:11+08:00 ] 127.0.0.1 /index.php/Admin/Manager/showlist
+ERR: 无法加载控制器:Manager
+
